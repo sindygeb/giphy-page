@@ -1,0 +1,90 @@
+body {
+    background-image: url("../images/comic_background.jpg")
+}
+
+main {
+    background-color: #000000;
+    margin: auto;
+    width: 75%;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 40px;
+}
+#gif-view {
+    background: #000000;
+    margin: auto;
+    width: 50%;
+}
+
+button {
+    background-color: #000000;
+    padding: 10px;
+    margin: 10px;
+    color: #ffffff;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+label {
+    color: #000000;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    float: right;
+    width: 60%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.sounds {
+    float: left;
+    background: #0dda8b;
+    width: 40%;
+    padding-bottom: 21px;
+}
+#buttons {
+    padding: 30px;
+}
+#add-hero {
+    background: #ffd900;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Bangers', cursive;
+    padding: 10px;
+}
+#hero-input {
+    height: 20px;
+    margin-right: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  audio {
+      padding-top: 25px;
+      padding-left: 60px;
+  }
+  #ratingDiv {
+      color: #0dda8b;
+      font-family: 'Baloo', cursive;
+      font-size: 18px;
+  }
+  #titleDiv {
+      color: #ffd900;
+      font-family: 'Baloo', cursive;
+      font-size: 18px;
+
+  }
