@@ -93,13 +93,4 @@ form {
       font-family: 'Baloo', cursive;
       font-size: 12px;
       text-align: center;
-      float: left;
-      padding-left: 40px;
-  }
-  #hulkSmash {
-    width: 20px;
-    height: auto;
-    float: left;
-    padding-top: 10px;
-    padding-left: 10px;
   }
