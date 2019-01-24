@@ -22,14 +22,26 @@ function showHero() {
     //for loop to go through the data and pull the images, rating and title (bonus)
     for (var k = 0; k < 10; k++) {
         var tenGIFs = response.data[k].images.original.url;
+        var tenGIFsPaused = response.data[k].images.original_still.url;
         var tenRatings = response.data[k].rating;
         var title = response.data[k].title;
 
         //writing all the info above to the gif view div. Prepend so the giphys show up on top of the old ones.
-        $("#gif-view").prepend("<img src=" + tenGIFs + ">").prepend("<p id='ratingDiv'> Rating: " + tenRatings + "</p>").prepend("<p id='titleDiv'> Title: " + title + "</p>");
+        $("#gif-view").prepend("<img src=" + tenGIFsPaused + " class='gif' data-still=" + tenGIFsPaused + " data-animate=" + tenGIFs + " data-state='still'>").prepend("<p id='ratingDiv'> Rating: " + tenRatings + "</p>").prepend("<p id='titleDiv'> Title: " + title + "</p>");
+        
     }
-
-    
+    //click event for the GIF to animate/pause
+    $(".gif").on("click", function(event) {
+        event.preventDefault();
+        var state = $(this).attr("data-state");
+        if (state === "still") {
+            $(this).attr("src", $(this).attr("data-animate"));
+            $(this).attr("data-state", "animate");
+          } else {
+            $(this).attr("src", $(this).attr("data-still"));
+            $(this).attr("data-state", "still");
+          }
+        });
     });
 
 };
