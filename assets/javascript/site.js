@@ -9,7 +9,7 @@ function showHero() {
     var hero = $(this).attr("data-name");
 
     //add the api key and the search criteria to the queryURL
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + hero + "&api_key=owjTQC0BsgQZpHL22pZDVTyHLvfVcrGS&limit=10&offset=0"
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + hero + "&api_key=owjTQC0BsgQZpHL22pZDVTyHLvfVcrGS&limit=10&offset=0"
 
     //the API call using ajax
     $.ajax({
